@@ -16,10 +16,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>EXCC — Exhausted Creator Crew</title>
-    <script type="module" crossorigin src="/assets/index-gFY3IBYS.js"></script>
+    <script type="module" crossorigin src="/assets/index-D5JRq0zk.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BDyzspE7.css">
   </head>
   <body>
     <div id="root"></div>
+    <script data-goatcounter="https://excc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+      (function () {
+        function gc(name) {
+          if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: name, title: name, event: true });
+        }
+        document.addEventListener("click", function (e) {
+          var el = e.target && e.target.closest ? e.target.closest("[data-gc]") : null;
+          if (el) gc(el.getAttribute("data-gc"));
+        });
+        document.addEventListener("play", function (e) {
+          var t = e.target;
+          if (t && t.getAttribute && t.getAttribute("data-gc") && !t.__gcPlayed) { t.__gcPlayed = true; gc(t.getAttribute("data-gc")); }
+        }, true);
+      })();
+    </script>
   </body>
 </html>
